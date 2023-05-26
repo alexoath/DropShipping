@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Catalogo</title>
+</head>
+<body>
+
+    
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="index.html" class="enlace">
+            <img src="https://thumbs.dreamstime.com/b/ejemplo-principal-del-c%C3%ADrculo-le%C3%B3n-en-fondo-negro-128423055.jpg" alt="" class="logo">
+        </a>
+
+        <ul>
+            <li><a class="active" href="#">Inicio</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="Catalogo.html">Catalogo</a></li>
+            <li><a href="https://wa.me/50248102231">Contacto</a></li>
+        </ul>
+    </nav>
+    <section></section>
+
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/1.png" alt="">
+                    </div>
+                    <p class="descripcion">Anillo Turko</p>
+                    <span class="precio">Q 1.300</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/2.png" alt="">
+                    </div>
+                    <p class="descripcion" id>Gorra de Beisbol </p>
+                    <span class="precio">Q 150</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/3.png" alt="">
+                    </div>
+                    <p class="descripcion">Reloj </p>
+                    <span class="precio">Q 250</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/4.png" alt="">
+                    </div>
+                    <p class="descripcion">Memoria Usb 2Tb</p>
+                    <span class="precio">Q 325</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/5.png" alt="">
+                    </div>
+                    <p class="descripcion">Audifonos</p>
+                    <span class="precio">Q 275</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/6.png" alt="">
+                    </div>
+                    <p class="descripcion">Playera</p>
+                    <span class="precio">Q 125</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/7.png" alt="">
+                    </div>
+                    <p class="descripcion">Tazas</p>
+                    <span class="precio">Q 100</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/8.png" alt="">
+                    </div>
+                    <p class="descripcion">Set de cadena y pulsera</p>
+                    <span class="precio">Q 560</span>
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">NIKE MODEL 1</h2>
+                <p id="descripcion">Descripción Modelo 1</p>
+
+                <span class="precio" id="precio">$ 130</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">Cantidad</label>
+
+                        <INPUT id=text1 style="WIDTH: 200px; HEIGHT: 35px"
+                         name=text1>
+                            
+                        </select>
+                    </div>
+                    <a href="carretilla.html"><button>AGREGAR AL CARRITO</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
